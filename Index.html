@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form{
+            display: flex;
+            justify-content:center ;
+        }
+        table{
+            width: 40rem;
+        }
+        th{
+            background: #0085b9;
+            color: white;
+            font-size: 30px;
+        }
+        h1{
+            text-decoration: underline;
+        }
+        td{
+            padding: 10px;
+        }
+        input{
+            padding: 4px;
+            outline: none;
+            height: 22px;
+        }
+        input[type="submit"],input[type="reset"]{
+            background: #1b74c7;
+            color: white;
+            padding: 9px;
+            height: 2.5rem;
+            border: none;
+            border-radius: 12px;
+            font-size: 19px;
+
+        }
+    </style>
+</head>
+<body style="width: 100%; height: 90vh;">
+    <h1 align="center">Regitration Form</h1>
+    
+    <form action="#" >
+
+        
+        <table border="1" >
+
+    <tr>           
+        <th colspan="2">
+            Personal Details
+        </th>
+    </tr> 
+            <tr>
+                <td> <label for="fname"> First Name*</label></td>
+                <td><input type="text" name="fname" id="fname" required></td>
+            </tr>
+            <tr>
+                <td><label for="lname"> Last Name* </label></td>
+                <td><input type="text" name="lname" id="lname" required></td>
+            </tr>
+            <tr>
+                <td><label for="email"> Email* </label></td>
+                <td><input type="email" name="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone"> Phone Number* </label></td>
+                <td><input type="number" max="9999999999" name="phone" id="phone" required ></td>
+            </tr>
+
+    <tr>           
+        <th colspan="2">
+            Account Details
+        </th>
+    </tr> 
+            <tr>
+                <td> <label for="userName"> User Name*</label></td>
+                <td><input type="text" maxlength="15" pattern="[a-zA-Z0-8]+$" title="Only Alphnumeric are required" minlength="5" name="userName" id="userName" required></td>
+            </tr>
+            <tr>
+                <td><label for="password"> Password* </label></td>
+                <td><input type="password" minlength="8"  name="password" id="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="cpassword"> Confirm Password* </label></td>
+                <td><input type="password" name="cpassword" id="cpassword" required></td>
+            </tr>
+            <tr>
+                <td><label for="address1"> Address Line 1* </label></td>
+                <td><input type="text" name="address1" id="address1" required></td>
+            </tr>
+            <tr>
+                <td><label for="address2"> Address Line 2 </label></td>
+                <td><input type="text" name="address2" id="address2" ></td>
+            </tr>
+            <tr>
+                <td><label for="city"> City* </label></td>
+                <td><input type="text" name="city" id="city" required ></td>
+            </tr>
+            <tr>
+                <td><label for="state"> State* </label></td>
+                <!-- <td><input type="text" name="city" id="city" required ></td> -->
+                <td>
+                    <select name="state" id="state">
+                        <option value="Uttar_Pradesh" selected>Uttar Pradesh</option>
+                        <option value="Madhya_Pradesh" >Madhya Pradesh</option>
+                        <option value="Andra_Pradesh" >Andra Pradesh</option>
+                        <option value="telangana" > Telangana</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="ZIP"> ZIP code* </label></td>
+                <td><input type="number" max="99999" name="ZIP" id="ZIP" title="should have 5 digits" required ></td>
+            </tr>
+            <tr>           
+                <th colspan="2">
+                    Preferences
+                </th>
+            </tr> 
+                    <tr>
+                        <td> <label for="gender"> Gender*</label></td>
+                        <td>
+                        <input type="radio" name="gender" id="gender" value="female" required>Female <br>
+                        <input type="radio" name="gender" id="gender" value="male" required>Male <br>
+                        <input type="radio" name="gender" id="gender" value="other" required>Other</td>
+                    </tr>
+                    <tr>
+                        <td><label for="newsletter">Subscribe to Newsletter</label></td>
+                        <td><input type="checkbox" name="newsletter" id="newsletter" value="Subscribe_to_Newsletter"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="bio"> Bio </label></td>
+                        <td><textarea name="bio" maxlength="200" id="bio" cols="30" rows="3"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="terms">Accept Terms and Conditions*</label></td>
+                        <td><input type="checkbox" name="terms" id="terms" value="agreed" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Submit"></td>
+                        <td><input type="reset" value="reset"></td>
+                    </tr>
+                
+                    
+                </table>
+                
+            </form>
+            <h2 style=" margin: 10px" align="center">
+
+                Terms and Conditions
+            </h2>
+            <div style="margin: auto; width: 40%;" >
+
+                <iframe src="https://yellowfin-team.com/Terms%20&%20Conditions/Terms%20&%20Conditions%2013%20May%2013.jpg" frameborder="0" width="100%" height="70%" ></iframe>
+            </div>
+</body>
+</html>

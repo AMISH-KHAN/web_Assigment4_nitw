@@ -137,12 +137,18 @@
                         <td><textarea name="bio" maxlength="200" id="bio" cols="30" rows="3"></textarea></td>
                     </tr>
                     <tr>
-                        <td><label for="terms">Accept Terms and Conditions*</label></td>
-                        <td><input type="checkbox" name="terms" id="terms" value="agreed" required></td>
-                    </tr>
-                    <tr>
-                        <td><input type="submit" value="Submit"></td>
-                        <td><input type="reset" value="reset"></td>
+                        <td colspan="2" >
+                            <div style="display: flex;justify-content: center; align-items: center;">
+                            <input type="checkbox" name="terms" id="terms" value="agreed" style="margin-right: 10px;" required>
+                            <label for="terms">Accept Terms and Conditions*</label>
+                        </div>
+                        </tr>
+                    <tr  >
+                        <td colspan="2">
+                            <div style="display: flex; justify-content:center;"><input type="submit" style="margin-right: 6px;" value="Submit">
+                        <input type="reset" value="reset">
+                    </div>
+                    </td>
                     </tr>
                 
                     
@@ -159,4 +165,5 @@
             </div>
 </body>
 </html>
+
 
